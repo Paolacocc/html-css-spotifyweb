@@ -40,9 +40,9 @@ h3 {
     background-color: black;
 }
 .left-bar {
-    
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    height: 100%;
     flex-direction: column;
     
     color: white;
@@ -55,23 +55,19 @@ h3 {
     font-size: .8rem;
 }
 .logo {
-    /* height: 15%; */
+    
     width: 150px;
     padding: 20px;
 }
 .left-bar-list1{
-    /* height: 25%; */
-    padding: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .left-bar-list2{
-    /* height: 40%; */
-    padding: 20px;
-    overflow-y: auto;
-    
+    flex-grow: 1;
+    overflow-y: auto;   
 }
-.left-bar-list2 h4{
+.left-bar h4{
     text-transform: uppercase;
 }
 .left-bar span{
@@ -89,12 +85,10 @@ h3 {
 .home {
     filter: none;
 }
-.leftbar-footer{
-    /* height: 20%; */
+/* .leftbar-footer{
     width: 200px;
     
-    padding: 20px;
-}
+} */
 .app-download {
     filter: contrast(0.1);
     display: inline-block;
@@ -133,6 +127,7 @@ h3 {
 }
 .leftbar-footer hr {
     width: 100%;
+    
 }
 
 @media screen and (max-width: 600px) {
