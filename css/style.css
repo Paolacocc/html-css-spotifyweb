@@ -58,6 +58,17 @@ h3 {
     padding: 10px 20px 10px 0;
     width: 150px;
 }
+.logo-small{
+    display: none;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.logo-small img {
+  
+    padding: 5px 5px 10px;
+}
 .left-bar-list1{
     padding-bottom: 20px;
 }
@@ -133,11 +144,15 @@ h3 {
 }
 @media screen and (max-width: 600px) {
     .leftbar-container{
-        width: 50px;
+        width: 80px;
     }
     .left-bar {
         display: none;
     }
+    .logo-small {
+        display: block;
+    }
+    
 }
 h6 {
     padding: 5px;
@@ -226,17 +241,17 @@ h6 {
 .page-list4 img {
     border-radius: 50%;
 }
-.col:hover {
-    opacity: 0.5;
 
-}
 .img-hover i {
     display: none;
 }
 .col:hover i {
     display: block;
 }
+.col:hover {
+    opacity: 0.5;
 
+}
 
 li:hover {
     color: white;
@@ -260,6 +275,9 @@ li:hover {
 }
 @media screen and (max-width: 600px) {
     .content {
+        width: calc(100% - 80px);
+    }
+    .content-header {
         width: calc(100% - 80px);
     }
 }
