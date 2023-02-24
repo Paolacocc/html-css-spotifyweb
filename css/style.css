@@ -190,6 +190,7 @@ h6 {
     color: white;
 }
 .content-page li {
+    color: gray;
     font-size: 1.2vw;
     text-transform: uppercase;
 }
@@ -198,20 +199,52 @@ h6 {
     justify-content: center;
     gap: 20px;
 }
+
 .row {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
 
 }
+.img-hover {
+    position: relative;
+}
+
 .col {
+    
     width: calc(100% / 6 - 10px);
     margin-right: 10px;
     margin-bottom: 10px;
 }
+.col i { 
+    font-size: 60px;
+    position: absolute;
+    left: calc(50% - 30px);
+    top: calc(50% - 30px);   
+    
+}
 .page-list4 img {
     border-radius: 50%;
 }
+.col:hover {
+    opacity: 0.5;
+
+}
+.img-hover i {
+    display: none;
+}
+.col:hover i {
+    display: block;
+}
+
+
+li:hover {
+    color: white;
+}
+
+/* .img-hover i:hover {
+    display: block;
+} */
 
 
 @media screen and (max-width: 1100px ) {
@@ -318,7 +351,7 @@ h6 {
     padding: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .playbar1-icons {
         flex-direction: column;
     }
